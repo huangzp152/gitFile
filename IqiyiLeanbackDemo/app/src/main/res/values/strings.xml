@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IqiyiLeanbackDemo</string>
+
+    <string name="search_results">Search results for \'%1$s\'</string>
+
+    <string name="no_search_results">No search results found for \'%1$s\'</string>
+</resources>

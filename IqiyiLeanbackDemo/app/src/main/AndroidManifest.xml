@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.iqiyileanbackdemo">
+
+    <uses-feature
+        android:name="android.software.leanback"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--//////////////////////自己练习的-->
+   <!--<uses-permission android:name="android.permission.READ_CONTACTS"/>-->
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Leanback">
+
+        <activity android:name=".view.MainActivity"
+            android:banner="@drawable/iqiyi_logo"
+            android:icon="@drawable/iqiyi_logo"
+            android:label="TestQIQiyi"
+            android:logo="@drawable/iqiyi_logo"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.DetailsActivity"/>
+        <activity android:name=".view.PlaybackOverlayActivity"/>
+        <activity android:name=".view.SearchActivity"/>
+
+
+        //////////////////////自己练习的
+
+
+    </application>
+
+</manifest>
